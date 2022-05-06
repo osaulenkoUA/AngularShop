@@ -1,0 +1,14 @@
+header{
+  display: flex;
+}
+.list{
+  margin: 0;
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+  .item{
+    a{
+      font-size: 20px;
+    }
+  }
+}
