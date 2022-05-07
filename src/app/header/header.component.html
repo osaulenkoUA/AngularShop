@@ -6,19 +6,18 @@
   <nav class="navigation">
     <ul class="list">
       <li class="item">
-        <a routerLink="/">HOME</a>
+        <a [routerLinkActiveOptions]="{exact:true}"  routerLinkActive="active" routerLink="/">HOME</a>
       </li>
 
       <li class="item">
-        <a routerLink="/products">ТОВАРИ</a>
+        <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/products">ТОВАРИ</a>
       </li>
 
       <li class="item">
-        <a routerLink="/contacts">Контакти</a>
+        <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/contacts">Контакти</a>
       </li>
 
     </ul>
   </nav>
-
 
 </header>

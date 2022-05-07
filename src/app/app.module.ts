@@ -10,9 +10,19 @@ import {HeaderComponent} from './header/header.component';
 import {RouterModule, Routes} from "@angular/router";
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'products', component: ProductsComponent},
-  {path: 'contacts', component: ContactsComponent},
+  {
+    path: '',
+    component: HomeComponent,
+    data:['ddd']
+  },
+  {
+    path: 'products',
+    component: ProductsComponent
+  },
+  {
+    path: 'contacts',
+    component: ContactsComponent
+  },
 
 ]
 
@@ -28,6 +38,9 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes)
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
